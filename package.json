@@ -5,7 +5,7 @@
   "description": "Overload the tab key with more functions.",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/tabber",
+  "repository": "https://github.com/pfitzseb/atom-tabber",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
