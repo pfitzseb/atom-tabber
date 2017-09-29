@@ -1,13 +1,14 @@
 {
-  "name": "tibber",
+  "name": "tabber",
   "main": "./lib/tabber",
-  "version": "0.2.0",
+  "version": "0.0.0",
   "description": "Overload the tab key with more functions.",
-  "keywords": [],
-  "repository": "https://github.com/pfitzseb/atom-tibber",
+  "keywords": ["autocomplete"],
+  "repository": "https://github.com/pfitzseb/atom-tabber",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }
