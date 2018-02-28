@@ -1,5 +1,0 @@
-{
-  "atom-text-editor:not(.autocomplete-active)": {
-    "tab": "tabber:tab"
-  }
-}

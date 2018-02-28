@@ -1,6 +1,6 @@
 {
   "name": "tibber",
-  "main": "./lib/tabber",
+  "main": "./lib/tibber",
   "version": "0.2.1",
   "description": "Overload the tab key with more functions.",
   "keywords": [

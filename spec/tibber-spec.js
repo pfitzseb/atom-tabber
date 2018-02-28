@@ -1,8 +1,8 @@
 'use babel'
 
-import Tabber from '../lib/tabber'
+import Tibber from '../lib/tibber'
 
-describe('Tabber', () => {
+describe('Tibber', () => {
   let editor
 
   beforeEach(() => {
@@ -16,15 +16,15 @@ describe('Tabber', () => {
   describe('when the tab key is pressed', () => {
     it('inserts an indent if the cursor is not positioned after a word', () => {
       expect(editor.getText()).toBe('')
-      atom.commands.dispatch(editor.getElement(), 'tabber:tab')
+      atom.commands.dispatch(editor.getElement(), 'tibber:tab')
       expect(/\s*/.test(editor.getText())).toBeTruthy()
 
-      atom.commands.dispatch(editor.getElement(), 'tabber:tab')
+      atom.commands.dispatch(editor.getElement(), 'tibber:tab')
       expect(/\s*/.test(editor.getText())).toBeTruthy()
 
       editor.setText('(asd)')
       editor.setCursorBufferPosition([0, Infinity])
-      atom.commands.dispatch(editor.getElement(), 'tabber:tab')
+      atom.commands.dispatch(editor.getElement(), 'tibber:tab')
       expect(/\(asd\)\s*/.test(editor.getText())).toBeTruthy()
     })
 
@@ -33,9 +33,9 @@ describe('Tabber', () => {
       editor.setGrammar(atom.grammars.grammarForScopeName('source.js'))
       editor.setText('atom.works')
       editor.setCursorBufferPosition([0, Infinity])
-      atom.commands.dispatch(editor.getElement(), 'tabber:tab')
+      atom.commands.dispatch(editor.getElement(), 'tibber:tab')
       await new Promise(resolve => setTimeout(resolve, 200))
-      atom.commands.dispatch(editor.getElement(), 'tabber:tab')
+      atom.commands.dispatch(editor.getElement(), 'tibber:tab')
       await new Promise(resolve => setTimeout(resolve, 200))
       expect(editor.getText()).toBe('atom.workspace')
     })

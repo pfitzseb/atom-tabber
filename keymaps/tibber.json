@@ -1,0 +1,5 @@
+{
+  "atom-text-editor:not(.autocomplete-active):not([mini])": {
+    "tab": "tibber:tab"
+  }
+}
