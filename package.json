@@ -1,7 +1,7 @@
 {
   "name": "tibber",
   "main": "./lib/tibber",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Overload the tab key with more functions.",
   "keywords": [
     "autocomplete"
